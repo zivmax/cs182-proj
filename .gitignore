@@ -1,5 +1,5 @@
 *.twb
 build/
-*.csv
 .venv/
 .devcontainer/git.sh
+
