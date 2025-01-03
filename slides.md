@@ -110,7 +110,7 @@ h2 {
 ## K-means
 
 - **PCA**:
-  - Scaled data, weighted `price` and `carbody` by 1.25.
+  - Normlized data, weighted `price` and `carbody` by 1.25.
   - Retained 7 dimensions (80% variance).
 - **Clustering**:
   - Chose `k=5` based on Elbow Plot.
