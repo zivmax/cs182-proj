@@ -15,7 +15,7 @@ style: |
 
 <div style="margin-left: 30%; margin-top: -3%">
 
-### —— Identifying Competitors for Volkswagen Car
+### —— Identifying Competitors for Volkswagen Cars
 
 </div>
 
