@@ -81,7 +81,7 @@ h2 {
 
 - **Factor Analysis**:
   - KMO score: 0.8035.
-  - 7 factors retained, explaining >80\% variance.
+  - 7 factors retained (80\% variance).
 - **Clustering**:
   - Cut dendrogram at scale 10, thus 4 clusters.
   - Volkswagen products found in "Mid Price Comfortable" and "Mid Price Practical".
