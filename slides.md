@@ -168,6 +168,6 @@ h2 {
 
 # Conclusions
 
-- **Best Method**: Factor Analysis + Hierarchical Clustering.
+- **Best Method**: Factor Analysis + DIANA.
 
 - **Competitors**: Filtered by price range (0.8, 1.2) times Volkswagen's mean price.
