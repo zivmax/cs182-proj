@@ -15,7 +15,8 @@
                 "ms-python.vscode-pylance",
                 "ms-python.black-formatter",
                 "w88975.code-translate",
-                "ms-toolsai.jupyter"
+                "ms-toolsai.jupyter",
+                "marp-team.marp-vscode"
             ],
             "settings": {
                 "[python]": {
