@@ -22,7 +22,7 @@ style: |
 ![bg opacity:0.1](image/slides/volkswagen.jpg)
 
 <!-- 
-大家好，我们小组的 Project Topic 是利用聚类分析来 Identify Competitors for Volkswagen Cars .
+老师和同学们上午好，我们小组的 Project Topic 是利用聚类分析来 Identify Competitors for Volkswagen Cars .
 -->
 
 ---
