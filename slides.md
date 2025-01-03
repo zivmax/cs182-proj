@@ -21,6 +21,10 @@ style: |
 
 ![bg opacity:0.1](image/slides/volkswagen.jpg)
 
+<!-- 
+大家好，我们小组的 Project Topic 是利用聚类分析来 Identify Competitors for Volkswagen Cars .
+-->
+
 ---
 
 # Introduction
@@ -32,6 +36,10 @@ style: |
   - Prototype Clustering (K-means)
   - Density Clustering (DBSCAN).
 
+<!-- 
+那么具体而言，我们的 Objective 是对市场中的 205 款汽车产品进行聚类，以识别大众汽车的 competitors。在初步查看数据集后，基于我们的生活经验和常识，我们特别关注了两个特征，分别是 carbody（车身类型）和 price（价格）。我们使用了三种分别对应不同经典聚类思想的方法来完成分析：Hierarchical Clustering（层次聚类）、Prototype Clustering（原型聚类）和Density Clustering（密度聚类）。
+-->
+
 ---
 
 # Data Preprocessing
@@ -41,6 +49,10 @@ style: |
   - Removed irrelevant `car_ID`.
 
 ![bg right:45% ](image/slides/datainfo.png)
+
+<!-- 
+在 data preprocessing 阶段，我们首先从`CarName`中提取了品牌信息，并移除了不相关的`car_ID`。这一步是为了简化数据集，并确保我们只保留对聚类有用的特征。
+-->
 
 ---
 
@@ -52,6 +64,10 @@ style: |
 
 ![bg right:50% fit](image/slides/z-socre-dist.png)
 
+<!-- 
+接下来我们进行了 Data Cleaning，修正了品牌名称中的拼写错误，并根据查阅的资料保留了 Z-score 分析中发现的24个异常值。
+-->
+
 ---
 
 # Data Preprocessing
@@ -62,9 +78,11 @@ style: |
 
 ![bg right:50% fit 95%](image/slides/cor-matrix.png)
 
+<!-- 
+最后，我们通过计算 correlation matrix，合并了 highly correlated features，进而将特征数量减少到19个。这一步是为了降低 multicollinearity，提高聚类的效果。
+-->
 
 ---
-
 
 <style scoped>
 h1 {
@@ -86,12 +104,11 @@ h2 {
   - Cut dendrogram at scale 10, thus 4 clusters.
   - Volkswagen products found in "Mid Price Comfortable" and "Mid Price Practical".
 
-
-
 ![bg right:35% fit 95%](image/slides/dendrograph.png)
 
-
-
+<!-- 
+在 Hierarchical Clustering 中，我们首先进行了因子分析，KMO得分为0.8035，保留了7个因子，解释了超过80%的方差。然后根据我们对 DendroGram 的观察，我们将 Cut Value 设在 10 这个 significant point 上，得到了4个聚类。聚类的结果中，大众汽车的产品主要分布在 “中价舒适型” 和 “中价实用型” 两个聚类中。
+-->
 
 ---
 
@@ -119,6 +136,10 @@ h2 {
 ![bg right:40% vertical fit](image/slides/elbow.png)
 ![bg fit](image/slides/kmeans.png)
 
+<!-- 
+在 Prototype Clustering 中，我们首先对数据进行了PCA降维，保留了7个维度，同样解释了超过80%的方差。然后，我们根据Elbow Graph 选择了 k=5 进行K-means聚类，不选择 2 这个更曲折的点是由于聚类的数量需要有合理性。那么最后的结果显示，大众汽车的产品同样分布在 “中价舒适型” 和 “中价实用型” 两个聚类中。
+-->
+
 ---
 
 <style scoped>
@@ -143,6 +164,10 @@ h2 {
 
 ![bg right:40% fit 180%](image/slides/dbscan.png)
 
+<!-- 
+在 Density Clustering 中，我们进行了与 K-means 相似的 PCA 预处理。然后，我们使用网格搜索优化DBSCAN的参数，并根据得到的参数进行聚类，最终得到了2个聚类。结果中，大众汽车的产品主要分布在 “中价MPV” 聚类中。
+-->
+
 ---
 
 # Results and Comparison
@@ -164,6 +189,10 @@ h2 {
 
 </div>
 
+<!-- 
+最后，我们对三种聚类方法的结果进行了比较。虽然单独从这些指标来看，DBSCAN的表现最好，但 DIANA 综合指标和实际聚类结果来看，是最优的方法。
+-->
+
 ---
 
 # Conclusions
@@ -171,3 +200,8 @@ h2 {
 - **Best Method**: Factor Analysis + DIANA.
 
 - **Competitors**: Filtered by price range (0.8, 1.2) times Volkswagen's mean price.
+
+<!-- 
+综上所述，我们认为 Factor Analysis 结合 DIANA 进行层次聚类是最佳方法。
+最后的竞争对手列表，我们通过筛选价格为大众汽车的平均价格（0.8, 1.2）倍，并且和大众汽车在同一个 Cluster 的产品得出。
+-->
