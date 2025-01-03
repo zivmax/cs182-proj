@@ -2,4 +2,6 @@
 build/
 .venv/
 .devcontainer/git.sh
-
+*.html
+*.pptx
+*.pdf
