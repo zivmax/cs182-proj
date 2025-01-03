@@ -65,7 +65,19 @@ style: |
 
 ---
 
-# Hierarchical Clustering (DIANA)
+
+<style scoped>
+h1 {
+    margin-bottom: 0 !important; /* Remove bottom margin of h1 */
+}
+
+h2 {
+    margin-top: 0 !important; /* Remove top margin of h2 */
+}
+</style>
+
+# Hierarchical Clustering
+## DIANA
 
 - **Factor Analysis**:
   - KMO score: 0.8035 (suitable for factor analysis).
@@ -84,7 +96,19 @@ style: |
 
 ---
 
-# Prototype Clustering (K-means)
+<style scoped>
+h1 {
+    margin-bottom: 0 !important; /* Remove bottom margin of h1 */
+}
+
+h2 {
+    margin-top: 0 !important; /* Remove top margin of h2 */
+}
+</style>
+
+
+# Prototype Clustering
+## K-means
 
 - **PCA**:
   - Scaled data, weighted `price` and `carbody` by 1.25.
@@ -98,7 +122,19 @@ style: |
 
 ---
 
-# Density Clustering (DBSCAN)
+<style scoped>
+h1 {
+    margin-bottom: 0 !important; /* Remove bottom margin of h1 */
+}
+
+h2 {
+    margin-top: 0 !important; /* Remove top margin of h2 */
+}
+</style>
+
+
+# Density Clustering
+## DBSCAN
 
 - **PCA**:
   - Similar preprocessing as K-means.
