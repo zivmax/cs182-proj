@@ -27,8 +27,10 @@ style: |
 
 - **Objective**: Cluster 205 automotive products to identify competitors of Volkswagen.
 - **Key Features**: `carbody` and `price` are prioritized.
-- **Algorithms**: K-means, DBSCAN, and DIANA (hierarchical clustering).
-
+- **Method**: 
+  - Hierarchical Clustering (DIANA)
+  - Prototype Clustering (K-means)
+  - Density Clustering (DBSCAN).
 
 ---
 
