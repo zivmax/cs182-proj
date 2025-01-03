@@ -147,11 +147,11 @@ h2 {
 
 # Results and Comparison
 
-| **Method**         | **Silhouette Score** | **Calinski-Harabasz Score** | **Davies-Bouldin Score** |
-|---------------------|----------------------|-----------------------------|--------------------------|
-| Hierarchical        | 0.2835               | 87.8302                     | 1.2783                   |
-| K-Means             | 0.1642               | 36.0311                     | 1.8688                   |
-| DBSCAN              | 0.3590               | 9.0123                      | 0.9466                   |
+| **Method** | **Silhouette Score** | **Calinski-Harabasz Score** | **Davies-Bouldin Score** |
+| ---------- | -------------------- | --------------------------- | ------------------------ |
+| DIANA      | 0.2835               | 87.8302                     | 1.2783                   |
+| K-Means    | 0.1642               | 36.0311                     | 1.8688                   |
+| DBSCAN     | 0.3590               | 9.0123                      | 0.9466                   |
 
 
 <div style="font-size: 0.8em;">
