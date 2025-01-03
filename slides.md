@@ -80,18 +80,17 @@ h2 {
 ## DIANA
 
 - **Factor Analysis**:
-  - KMO score: 0.8035 (suitable for factor analysis).
+  - KMO score: 0.8035.
   - 7 factors retained, explaining >80\% variance.
 - **Clustering**:
-  - Cut dendrogram at scale 10, resulting in 4 clusters.
-  - Volkswagen products found in "Mid Price Comfortable Cars" and "Mid Price Practical Cars".
+  - Cut dendrogram at scale 10, thus 4 clusters.
+  - Volkswagen products found in "Mid Price Comfortable" and "Mid Price Practical".
 
 
-<div style="margin-left:20%">
 
-![h:180](image/slides/dendrograph.png)
+![bg right:35% fit 95%](image/slides/dendrograph.png)
 
-</div>
+
 
 
 ---
@@ -115,7 +114,7 @@ h2 {
   - Retained 7 dimensions (80% variance).
 - **Clustering**:
   - Chose `k=5` based on Elbow Plot.
-  - Volkswagen products in "Mid Price Comfortable Cars" and "Mid Price Practical Cars".
+  - Volkswagen products in "Mid Price Comfortable" and "Mid Price Practical".
 
 ![bg right:40% vertical fit](image/slides/elbow.png)
 ![bg fit](image/slides/kmeans.png)
